@@ -1,4 +1,4 @@
-package accessdatamongo;
+package hungnv.springdemo.accessdatamongo;
 
 import org.springframework.data.annotation.Id;
 
