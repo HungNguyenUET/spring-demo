@@ -10,6 +10,8 @@ public class VocabController {
 
     @GetMapping("/add")
     public String addVocab(@RequestParam(value = "word", defaultValue = "") String word) {
+        System.out.println("add word: " + word);
+
         if (word.isBlank() || word.isEmpty())
             return "ERROR: " + word + " is invalid";
 
@@ -30,6 +32,11 @@ public class VocabController {
             return "Data is empty now";
 
         return vocabData.getWord();
+    }
+
+    @GetMapping("/size")
+    public int getSize() {
+        return vocabData.getSize();
     }
 
 }

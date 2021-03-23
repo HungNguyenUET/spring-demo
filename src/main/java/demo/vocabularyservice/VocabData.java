@@ -34,4 +34,8 @@ public class VocabData {
     public String getWord() {
         return vocabSet.first();
     }
+
+    public int getSize() {
+        return vocabSet.size();
+    }
 }
