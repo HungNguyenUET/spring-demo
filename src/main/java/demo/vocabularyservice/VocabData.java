@@ -1,15 +1,13 @@
 package demo.vocabularyservice;
 
-import java.util.TreeSet;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class VocabData {
     private static VocabData instance;
 
-    private final TreeSet<String> vocabSet;
+    //private final TreeSet<String> vocabSet;
 
-    private VocabData() {
-        vocabSet = new TreeSet<>();
-    }
+    private VocabRepository repository;
 
     public static VocabData getInstance() {
         if (instance == null) {
@@ -19,23 +17,17 @@ public class VocabData {
         return instance;
     }
 
-    public boolean isEmpty() {
-        return vocabSet.isEmpty();
+    public void setRepository(VocabRepository repository) {
+        this.repository = repository;
     }
 
-    public boolean isExisted(String world) {
-        return vocabSet.contains(world);
+    public void addVocab(String word, String sentence) {
+        Vocab vocab = new Vocab(word, sentence);
+        repository.save(vocab);
     }
 
-    public void addWord(String word) {
-        vocabSet.add(word);
-    }
-
-    public String getWord() {
-        return vocabSet.first();
-    }
-
-    public int getSize() {
-        return vocabSet.size();
+    public String getSentenceByWord(String word) {
+        Vocab vocab = repository.findByWord(word);
+        return vocab.getSentence();
     }
 }

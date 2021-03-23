@@ -9,34 +9,24 @@ public class VocabController {
     private VocabData vocabData = VocabData.getInstance();
 
     @GetMapping("/add")
-    public String addVocab(@RequestParam(value = "word", defaultValue = "") String word) {
+    public String addVocab(@RequestParam(value = "word", defaultValue = "") String word,
+                           @RequestParam(value = "sentence", defaultValue = "") String sentence) {
         System.out.println("add word: " + word);
 
         if (word.isBlank() || word.isEmpty())
             return "ERROR: " + word + " is invalid";
 
-        if (vocabData.isExisted(word))
-            return "This word is existed";
+        System.out.println("Add Word: " + word + ", sentence: " + sentence);
+        vocabData.addVocab(word, sentence);
 
-        System.out.println("Add Word: " + word);
-        vocabData.addWord(word);
-
-        return "Success add word " + word + " to collection";
+        return "Success add word: " + word + " with sentence: " + sentence + " to collection";
     }
 
     @GetMapping("/get")
-    public String getVocab() {
-        System.out.println("Get a random word");
+    public String getVocab(@RequestParam(value = "word", defaultValue = "") String word) {
+        System.out.println("Get a example sentence by word");
 
-        if (vocabData.isEmpty())
-            return "Data is empty now";
-
-        return vocabData.getWord();
-    }
-
-    @GetMapping("/size")
-    public int getSize() {
-        return vocabData.getSize();
+        return vocabData.getSentenceByWord(word);
     }
 
 }
