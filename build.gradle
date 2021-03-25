@@ -23,6 +23,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation group: 'org.springframework.restdocs', name: 'spring-restdocs-mockmvc', version: '2.0.5.RELEASE'
 	testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.8.0'
+	compile("org.springframework.boot:spring-boot-starter-security")
+	compile("org.springframework.ldap:spring-ldap-core")
+	compile("org.springframework.security:spring-security-ldap")
+	compile("com.unboundid:unboundid-ldapsdk")
 }
 
 test {
