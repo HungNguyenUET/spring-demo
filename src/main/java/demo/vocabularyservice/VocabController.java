@@ -13,7 +13,7 @@ public class VocabController {
                            @RequestParam(value = "sentence", defaultValue = "") String sentence) {
         System.out.println("add word: " + word);
 
-        if (word.isBlank() || word.isEmpty())
+        if (word.isEmpty())
             return "ERROR: " + word + " is invalid";
 
         System.out.println("Add Word: " + word + ", sentence: " + sentence);
