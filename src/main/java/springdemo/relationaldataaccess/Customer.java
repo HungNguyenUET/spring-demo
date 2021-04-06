@@ -1,4 +1,4 @@
-package hungnv.springdemo.relationaldataaccess;
+package springdemo.relationaldataaccess;
 
 public class Customer {
 

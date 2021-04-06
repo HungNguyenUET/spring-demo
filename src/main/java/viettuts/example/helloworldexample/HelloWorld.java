@@ -1,4 +1,4 @@
-package vn.viettuts.example.helloworldexample;
+package viettuts.example.helloworldexample;
 
 public class HelloWorld {
     private String message;

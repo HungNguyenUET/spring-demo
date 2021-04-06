@@ -1,4 +1,4 @@
-package hungnv.springdemo.restservice;
+package springdemo.restservice;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -1,6 +1,6 @@
-package hungnv.springdemo.uploadingfiles;
+package springdemo.uploadingfiles;
 
-import hungnv.springdemo.uploadingfiles.storage.StorageService;
+import springdemo.uploadingfiles.storage.StorageService;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

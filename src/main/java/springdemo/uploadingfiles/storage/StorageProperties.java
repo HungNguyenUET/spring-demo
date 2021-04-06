@@ -1,4 +1,4 @@
-package hungnv.springdemo.uploadingfiles.storage;
+package springdemo.uploadingfiles.storage;
 
 public class StorageProperties {
 }

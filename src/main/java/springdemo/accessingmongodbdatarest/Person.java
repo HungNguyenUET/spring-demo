@@ -1,4 +1,4 @@
-package hungnv.springdemo.accessingmongodbdatarest;
+package springdemo.accessingmongodbdatarest;
 
 import org.springframework.data.annotation.Id;
 

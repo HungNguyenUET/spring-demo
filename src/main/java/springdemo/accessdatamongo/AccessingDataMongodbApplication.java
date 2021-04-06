@@ -1,4 +1,4 @@
-package hungnv.springdemo.accessdatamongo;
+package springdemo.accessdatamongo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

@@ -1,4 +1,4 @@
-package hungnv.springdemo.relationaldataaccess;
+package springdemo.relationaldataaccess;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

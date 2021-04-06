@@ -1,4 +1,4 @@
-package hungnv.springdemo.accessdatamongo;
+package springdemo.accessdatamongo;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

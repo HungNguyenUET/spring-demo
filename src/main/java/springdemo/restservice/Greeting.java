@@ -1,4 +1,4 @@
-package hungnv.springdemo.restservice;
+package springdemo.restservice;
 
 public class Greeting {
 

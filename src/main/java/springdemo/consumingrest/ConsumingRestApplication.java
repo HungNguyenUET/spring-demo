@@ -1,4 +1,4 @@
-package hungnv.springdemo.consumingrest;
+package springdemo.consumingrest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

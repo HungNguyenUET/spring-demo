@@ -1,4 +1,4 @@
-package hungnv.springdemo.consumingrest;
+package springdemo.consumingrest;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,4 +1,4 @@
-package vn.viettuts.example.helloworldexample;
+package viettuts.example.helloworldexample;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

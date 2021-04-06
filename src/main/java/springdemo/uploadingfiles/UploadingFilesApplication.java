@@ -1,7 +1,7 @@
-package hungnv.springdemo.uploadingfiles;
+package springdemo.uploadingfiles;
 
-import hungnv.springdemo.uploadingfiles.storage.StorageProperties;
-import hungnv.springdemo.uploadingfiles.storage.StorageService;
+import springdemo.uploadingfiles.storage.StorageProperties;
+import springdemo.uploadingfiles.storage.StorageService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
